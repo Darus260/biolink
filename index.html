@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id" class="scroll-smooth dark"> <!-- Added 'dark' class here to enforce dark mode -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Nama Anda] | Akuntan Profesional</title>
+    <title>Darus Salam Alfatah | Akuntan Profesional</title>
     <meta name="description" content="Portofolio pribadi seorang akuntan profesional yang berdedikasi membantu bisnis Anda mengelola keuangan dengan akurat dan transparan.">
     <meta name="keywords" content="akuntan, profesional, laporan keuangan, perpajakan, audit, konsultasi bisnis, portofolio, akuntansi">
     <link rel="icon" href="https://www.svgrepo.com/show/496924/calculator.svg" type="image/svg+xml"> <!-- Favicon kalkulator -->
@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class', // Enable dark mode with 'class' strategy
+            darkMode: 'class', // Still use 'class' strategy, but 'dark' class is now always on HTML
             theme: {
                 extend: {
                     fontFamily: {
@@ -110,7 +110,7 @@
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <!-- Nama/Logo Pribadi -->
             <a href="#home" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                [Nama Saya]
+                Darus Salam Alfatah
             </a>
 
             <!-- Navigasi Menu (Desktop) -->
@@ -124,18 +124,13 @@
 
             <!-- Hamburger Menu (Mobile) -->
             <div class="flex items-center md:hidden">
-                <button id="dark-mode-toggle-mobile" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 mr-2">
-                    <i class="fas fa-moon text-xl dark:text-yellow-400"></i>
-                </button>
+                <!-- Removed dark mode toggle for mobile -->
                 <button id="hamburger-menu" class="text-gray-800 dark:text-gray-200 text-3xl focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
 
-            <!-- Dark Mode Toggle (Desktop) -->
-            <button id="dark-mode-toggle-desktop" class="hidden md:block p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
-                <i class="fas fa-moon text-xl dark:text-yellow-400"></i>
-            </button>
+            <!-- Removed Dark Mode Toggle (Desktop) -->
         </nav>
 
         <!-- Mobile Menu Overlay -->
@@ -160,7 +155,7 @@
         <!-- Hero Section -->
         <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-white py-20 px-4">
             <div class="container mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
-                <img src="https://placehold.co/200x200/4F46E5/FFFFFF?text=Foto+Akuntan+Profesional" alt="Foto Profesional [Nama Saya]" class="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-white shadow-lg object-cover">
+                <img src="https://placehold.co/200x200/4F46E5/FFFFFF?text=Darus+Salam+Alfatah" alt="Foto Profesional Darus Salam Alfatah" class="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-white shadow-lg object-cover">
                 <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
                     Halo, Saya <span class="typing-effect"></span>
                 </h1>
@@ -181,18 +176,24 @@
                 <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-gray-200" data-aos="fade-down">Tentang Saya</h2>
                 <div class="flex flex-col md:flex-row items-center gap-10">
                     <div class="md:w-1/2 flex justify-center" data-aos="fade-right" data-aos-delay="200">
-                        <img src="https://placehold.co/600x400/60A5FA/FFFFFF?text=Akuntan+Bekerja" alt="Akuntan Bekerja" class="rounded-lg shadow-lg w-full max-w-sm md:max-w-md object-cover">
+                        <img src="https://placehold.co/600x400/60A5FA/FFFFFF?text=Darus+Bekerja" alt="Darus Salam Alfatah Bekerja" class="rounded-lg shadow-lg w-full max-w-sm md:max-w-md object-cover">
                     </div>
                     <div class="md:w-1/2 text-lg leading-relaxed" data-aos="fade-left" data-aos-delay="400">
                         <p class="mb-6">
-                            Saya adalah seorang akuntan profesional dengan pengalaman lebih dari [Jumlah Tahun] tahun di bidang akuntansi dan keuangan. Saya berdedikasi untuk menyediakan solusi keuangan yang komprehensif dan akurat untuk individu dan bisnis dari berbagai skala.
+                            Saya adalah Darus Salam Alfatah, seorang akuntan profesional dengan pengalaman lebih dari 2 tahun di bidang akuntansi dan keuangan. Saya berdedikasi untuk menyediakan solusi keuangan yang komprehensif dan akurat untuk individu dan bisnis dari berbagai skala.
                         </p>
                         <p class="mb-6">
                             Keahlian saya meliputi penyusunan laporan keuangan, perencanaan pajak, audit internal, dan konsultasi bisnis strategis. Saya berkomitmen untuk membantu klien mencapai tujuan finansial mereka dengan integritas dan efisiensi.
                         </p>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-700 dark:text-gray-300">Pendidikan</h3>
+                        <ul class="list-disc list-inside mb-6">
+                            <li>Universitas Linggabuana PGRI Sukabumi, Akuntansi, Lulus 2024</li>
+                            <li>[Pendidikan Lainnya jika ada]</li>
+                        </ul>
                         <h3 class="text-2xl font-semibold mb-4 text-gray-700 dark:text-gray-300">Sertifikasi</h3>
                         <ul class="list-disc list-inside mb-6">
                             <li>Brevet A & B (Perpajakan)</li>
+                            <li>Brevet C (Perpajakan)</li>
                             <li>Sertifikasi Akuntansi Keuangan Lanjutan</li>
                             <li>Sertifikasi Audit Internal</li>
                             <li>[Sertifikasi Lainnya jika ada]</li>
@@ -465,20 +466,62 @@
                         <!-- Testimonial 1 -->
                         <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
                             <img src="https://placehold.co/100x100/e6e6e6/000000?text=Klien+Bisnis+1" alt="Foto Klien Bisnis 1" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
-                            <p class="text-lg italic mb-4">"Layanan akuntansi yang luar biasa! [Nama Anda] membantu kami merapikan pembukuan dan menghemat pajak secara signifikan. Sangat direkomendasikan!"</p>
+                            <p class="text-lg italic mb-4">"Layanan akuntansi yang luar biasa! Darus Salam Alfatah membantu kami merapikan pembukuan dan menghemat pajak secara signifikan. Sangat direkomendasikan!"</p>
                             <p class="font-semibold text-blue-600 dark:text-blue-400">- Budi Santoso, Pemilik Kedai Kopi Bahagia</p>
                         </div>
                         <!-- Testimonial 2 -->
                         <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
                             <img src="https://placehold.co/100x100/d6d6d6/000000?text=Klien+Bisnis+2" alt="Foto Klien Bisnis 2" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
-                            <p class="text-lg italic mb-4">"Profesionalisme dan keahlian [Nama Anda] dalam perpajakan sangat membantu perusahaan kami. Proses pelaporan pajak menjadi jauh lebih mudah dan akurat."</p>
+                            <p class="text-lg italic mb-4">"Profesionalisme dan keahlian Darus Salam Alfatah dalam perpajakan sangat membantu perusahaan kami. Proses pelaporan pajak menjadi jauh lebih mudah dan akurat."</p>
                             <p class="font-semibold text-blue-600 dark:text-blue-400">- Siti Aminah, Direktur PT. Solusi Digital</p>
                         </div>
                         <!-- Testimonial 3 -->
                         <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
                             <img src="https://placehold.co/100x100/c6c6c6/000000?text=Klien+Individu+1" alt="Foto Klien Individu 1" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
-                            <p class="text-lg italic mb-4">"Saya sangat terbantu dengan konsultasi perencanaan keuangan dari [Nama Anda]. Sekarang saya memiliki peta jalan yang jelas untuk mencapai tujuan finansial saya."</p>
+                            <p class="text-lg italic mb-4">"Saya sangat terbantu dengan konsultasi perencanaan keuangan dari Darus Salam Alfatah. Sekarang saya memiliki peta jalan yang jelas untuk mencapai tujuan finansial saya."</p>
                             <p class="font-semibold text-blue-600 dark:text-blue-400">- Rina Wijaya, Klien Individu</p>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                            <img src="https://placehold.co/100x100/b6b6b6/000000?text=Klien+Startup" alt="Foto Klien Startup" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
+                            <p class="text-lg italic mb-4">"Darus Salam Alfatah sangat responsif dan memberikan solusi akuntansi yang inovatif untuk startup kami. Sangat merekomendasikan untuk bisnis baru!"</p>
+                            <p class="font-semibold text-blue-600 dark:text-blue-400">- David Lee, Founder Startup Inovasi</p>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                            <img src="https://placehold.co/100x100/a6a6a6/000000?text=Klien+Freelancer" alt="Foto Klien Freelancer" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
+                            <p class="text-lg italic mb-4">"Sebagai freelancer, saya sering kesulitan dengan pajak. Darus Salam Alfatah membuat semuanya mudah dimengerti dan mengurus semua pelaporan saya dengan sempurna."</p>
+                            <p class="font-semibold text-blue-600 dark:text-blue-400">- Maya Sari, Desainer Grafis Freelance</p>
+                        </div>
+                        <!-- Testimonial 6 -->
+                        <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                            <img src="https://placehold.co/100x100/969696/000000?text=Klien+Korporat" alt="Foto Klien Korporat" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
+                            <p class="text-lg italic mb-4">"Keahlian Darus Salam Alfatah dalam audit internal sangat membantu kami mengidentifikasi area perbaikan dan memperkuat kontrol keuangan perusahaan."</p>
+                            <p class="font-semibold text-blue-600 dark:text-blue-400">- Alex Chandra, CFO Perusahaan Manufaktur</p>
+                        </div>
+                        <!-- Testimonial 7 -->
+                        <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                            <img src="https://placehold.co/100x100/868686/000000?text=Klien+Restoran" alt="Foto Klien Restoran" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
+                            <p class="text-lg italic mb-4">"Layanan pembukuan yang sangat detail dan tepat waktu. Kami tidak perlu khawatir lagi tentang laporan keuangan bulanan kami."</p>
+                            <p class="font-semibold text-blue-600 dark:text-blue-400">- Chef Bima, Pemilik Restoran "Rasa Nusantara"</p>
+                        </div>
+                        <!-- Testimonial 8 -->
+                        <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                            <img src="https://placehold.co/100x100/767676/000000?text=Klien+Edukasi" alt="Foto Klien Edukasi" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
+                            <p class="text-lg italic mb-4">"Darus Salam Alfatah memberikan wawasan yang sangat berharga dalam perencanaan keuangan untuk yayasan pendidikan kami. Sangat profesional dan berpengetahuan luas."</p>
+                            <p class="font-semibold text-blue-600 dark:text-blue-400">- Dr. Indah Permata, Ketua Yayasan Pendidikan</p>
+                        </div>
+                        <!-- Testimonial 9 -->
+                        <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                            <img src="https://placehold.co/100x100/666666/000000?text=Klien+UKM" alt="Foto Klien UKM" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
+                            <p class="text-lg italic mb-4">"Kami mempercayakan semua kebutuhan akuntansi UKM kami kepada Darus Salam Alfatah dan hasilnya selalu memuaskan. Sangat efisien dan dapat diandalkan."</p>
+                            <p class="font-semibold text-blue-600 dark:text-blue-400">- Joko Susilo, Pemilik Toko Kelontong Maju</p>
+                        </div>
+                        <!-- Testimonial 10 -->
+                        <div class="swiper-slide bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                            <img src="https://placehold.co/100x100/565656/000000?text=Klien+Konsultan" alt="Foto Klien Konsultan" class="rounded-full w-24 h-24 mb-4 object-cover border-4 border-blue-200 dark:border-blue-700">
+                            <p class="text-lg italic mb-4">"Kerja sama dengan Darus Salam Alfatah dalam proyek konsultasi keuangan sangat lancar. Analisisnya tajam dan rekomendasi yang diberikan sangat praktis."</p>
+                            <p class="font-semibold text-blue-600 dark:text-blue-400">- Lia Kartika, Konsultan Bisnis Independen</p>
                         </div>
                     </div>
                     <!-- Add Pagination -->
@@ -573,7 +616,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8 px-4 text-center transition-colors duration-300">
         <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-            <p class="mb-4 sm:mb-0">&copy; <span id="current-year"></span> [Nama Saya]. Semua Hak Dilindungi.</p>
+            <p class="mb-4 sm:mb-0">&copy; <span id="current-year"></span> Darus Salam Alfatah. Semua Hak Dilindungi.</p>
             <div class="flex space-x-6 mb-4 sm:mb-0">
                 <a href="https://linkedin.com/in/[username_linkedin_anda]" target="_blank" class="hover:text-blue-400 transition-colors duration-200">
                     <i class="fab fa-linkedin text-2xl"></i>
@@ -607,44 +650,8 @@
         // Get current year for footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Dark Mode Toggle
-        const darkModeToggleDesktop = document.getElementById('dark-mode-toggle-desktop');
-        const darkModeToggleMobile = document.getElementById('dark-mode-toggle-mobile');
-        const htmlElement = document.documentElement;
-
-        // Function to set dark mode
-        function setDarkMode(isDark) {
-            if (isDark) {
-                htmlElement.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-                darkModeToggleDesktop.querySelector('i').classList.replace('fa-moon', 'fa-sun');
-                darkModeToggleMobile.querySelector('i').classList.replace('fa-moon', 'fa-sun');
-            } else {
-                htmlElement.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-                darkModeToggleDesktop.querySelector('i').classList.replace('fa-sun', 'fa-moon');
-                darkModeToggleMobile.querySelector('i').classList.replace('fa-sun', 'fa-moon');
-            }
-        }
-
-        // Check for saved theme preference or system preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setDarkMode(savedTheme === 'dark');
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setDarkMode(true);
-        } else {
-            setDarkMode(false);
-        }
-
-        // Event listeners for dark mode toggles
-        darkModeToggleDesktop.addEventListener('click', () => {
-            setDarkMode(!htmlElement.classList.contains('dark'));
-        });
-        darkModeToggleMobile.addEventListener('click', () => {
-            setDarkMode(!htmlElement.classList.contains('dark'));
-        });
-
+        // Removed Dark Mode Toggle logic as per request.
+        // The 'dark' class is now directly applied to the <html> tag.
 
         // Hamburger Menu functionality
         const hamburgerMenu = document.getElementById('hamburger-menu');
@@ -678,8 +685,7 @@
         // Typing Effect for Hero Section
         const typingElement = document.querySelector('.typing-effect');
         // Updated phrases for an accountant
-        // Removed "[Nama Saya]" from phrases as it's now static in the H1
-        const phrases = ["Akuntan Profesional", "Ahli Laporan Keuangan", "Konsultan Pajak Terpercaya"];
+        const phrases = ["Darus Salam Alfatah", "Akuntan Profesional", "Ahli Laporan Keuangan", "Konsultan Pajak Terpercaya"];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
